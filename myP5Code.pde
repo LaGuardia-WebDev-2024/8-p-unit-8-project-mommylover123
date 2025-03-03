@@ -18,8 +18,9 @@ draw = function(){
  background(255,255,255,0);
 drawFish(50+fishMove,200);
 drawFish(400-fishMove,200); 
- 
- 
+ drawBird(400,100)
+ drawBird(200,100)
+ drawBoat(100,300)
  fishMove++;
  
  if(fishMove > 150){
@@ -28,6 +29,7 @@ drawFish(400-fishMove,200);
  drawFish(300-fishMove,200);
  
  drawWall(300,300);
+ 
  
  }
 
@@ -55,7 +57,7 @@ var drawWall=function(WallX,WallY,WallColor){
 
 
 var drawBoat=function(BoatX,BoatY,BoatColor){
-textSize(100);
+textSize(200);
      fill(300,0,0);
      text("𓊝",BoatX,BoatY);
 
@@ -63,8 +65,8 @@ textSize(100);
 
 
 
-vardrawBird=function(BirdX,BirdY,BirdColor){
-textSize(100);
+var drawBird=function(BirdX,BirdY,BirdColor){
+textSize(80);
      fill(300,0,0);
      text("𓅰 ",BirdX,BirdY);
 
